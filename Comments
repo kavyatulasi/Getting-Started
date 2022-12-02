@@ -1,0 +1,26 @@
+Introduction to PL/SQL Comments
+PL/SQL comments allow you to describe the purpose of a line or a block of PL/SQL code.
+
+When compiling the PL/SQL code, the Oracle precompiler ignores comments. However, you should always use comments to make your code more readable and to help you and other developers understand it better in the future.
+
+PL/SQL has two comment styles: single-line and multi-line comments.
+
+Single-line comments
+A single-line comment starts with a double hyphen ( --) that can appear anywhere on a line and extends to the end of the line.
+Sometimes, while testing a program, you may use a single-line comment to disable a line of code.
+
+---EXAMPLE---
+
+
+-- valued added tax 10%
+DECLARE co_vat_rate CONSTANT NUMBER := 0.1; 
+
+Multi-line comments
+A multi-line comment starts with a slash-asterisk ( /* ) and ends with an asterisk-slash ( */ ), and can span multiple lines:
+
+--EXAMPLE--
+
+/*
+  This is a multi-line comment
+  that can span multiple lines
+*/
